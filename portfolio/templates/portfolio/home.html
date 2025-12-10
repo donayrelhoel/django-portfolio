@@ -1,22 +1,57 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Lhoel Donayre Portfolio</title>
-    <style>
-        body { font-family: Arial; background: #f2f2f2; padding: 40px;}
-        .card { background: white; padding: 20px; border-radius: 10px;}
-    </style>
+    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
 </head>
 <body>
     <div class="card">
-        <h1>Hello, Im Lhoel Donayre</h1>
-        <p>Welcome to my Portfolio website!</p>
+        <!-- Profile Image -->
+        <img src="{% static 'portfolio/me1.jpg' %}" alt="Lhoel Donayre">
+
+        <!-- Introduction -->
+        <h1>Hello, I'm Lhoel Donayre</h1>
+        <p>Welcome to my personal portfolio! Here you'll find my skills, projects, education, and experience.</p>
+
+        <!-- Skills -->
+        <h2>Skills</h2>
+        <ul>
+            <li>Python / Django</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Git / GitHub</li>
+            <li>Bootstrap / Responsive Design</li>
+        </ul>
+
+        <!-- Projects -->
         <h2>Projects</h2>
         <ul>
-            <li> Project 1</li>
-            <li> Project 2</li>
-            <li> Project 3</li>
+            <li><strong>Portfolio Website:</strong> Personal website showcasing my skills and projects.</li>
+            <li><strong>Blog Platform:</strong> Built a blog using Django with user authentication.</li>
+            <li><strong>E-commerce App:</strong> Simple online store demo using Django and Bootstrap.</li>
         </ul>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <p>Bachelor's in Information Technology, STI College Santa Maria Bulacan, 2028</p>
+
+        <!-- Work Experience -->
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Intern, ABC Company (2022):</strong> Assisted in web development projects using Django and React.</li>
+            <li><strong>Freelance Web Developer (2023-present):</strong> Built websites for small businesses and personal portfolios.</li>
+        </ul>
+
+        <!-- Hobbies / Interests -->
+        <h2>Hobbies & Interests</h2>
+        <p>Coding, Photography, Traveling, Cooking, Watching Anime, Gaming</p>
+
+        <!-- Contact Info -->
+        <h2>Contact</h2>
+        <p>Email: jokerbelike12@gmail.com</p>
+        <p>Phone: 09912345678</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lhoel">linkedin.com/in/lhoel</a></p>
     </div>
 </body>
 </html>
