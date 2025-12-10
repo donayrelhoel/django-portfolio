@@ -1,74 +1,70 @@
-/* General Styles */
+/* General Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff9e6; /* soft yellow */
+    background-color: #fff9c4; /* soft yellow */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
+/* Card Container */
+.card {
+    background-color: white;
+    width: 80%;
     max-width: 800px;
-    margin: 40px auto;
-    background: white;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 40px 0;
 }
 
-/* Profile Section */
-.profile {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
+/* Profile Picture */
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;            /* 2x2 size */
+    height: 120px;
     object-fit: cover;
     border-radius: 10%;
     display: block;
-    margin: 0 auto 15px auto;
-    border: 3px solid #ffcc33; /* optional border */
+    margin: 0 auto 20px auto;
+    border: 2px solid #ffcc33;
 }
 
-.profile h1 {
-    margin: 10px 0;
-}
-
-.profile .intro {
-    font-size: 14px;
-    color: #333;
-}
-
-/* Section Headings */
-h2 {
-    border-bottom: 2px solid #ffcc33;
-    padding-bottom: 5px;
-    margin-top: 30px;
+/* Headings */
+h1, h2 {
+    text-align: center;
     margin-bottom: 15px;
     color: #333;
 }
 
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
 /* Lists */
 ul {
-    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
 }
 
 ul li {
-    margin-bottom: 8px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: left;
 }
 
-/* Links */
+/* Contact links */
 a {
-    color: #ff9933;
+    color: #ff9800;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Sections */
-section {
-    margin-bottom: 20px;
 }
